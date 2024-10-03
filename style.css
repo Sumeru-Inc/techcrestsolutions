@@ -1,0 +1,591 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    padding-top: 80px; /* Adjust this based on the height of your navbar */
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.nav-buttons .btn-primary {
+    background-color: #28a745;
+}
+
+.nav-buttons .btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.mission-text {
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+.mission-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mission-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Consulting Services Section */
+.consulting-services {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+}
+
+.consulting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.consulting-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.consulting-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.consulting-header p {
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Why Partner with Techcrest Solutions Section */
+.partner-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.partner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.partner-text {
+    max-width: 600px;
+}
+
+.partner-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.partner-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.key-points {
+    list-style: none;
+    padding-left: 0;
+}
+
+.key-points li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.key-points li::before {
+    content: '✔️';
+    margin-right: 10px;
+}
+
+.partner-image img {
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonials p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+}
+
+/* Success Stories Section */
+.success-stories {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.success-stories p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.story-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-content {
+    padding: 20px;
+}
+
+.story-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.story-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.story-card .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Latest Insights Section */
+.latest-insights {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.latest-insights h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.latest-insights p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.insight-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+}
+
+.insight-card img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.insight-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.insight-content h4 {
+    font-size: 1.1em;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.insight-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.insight-content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.insight-card .btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-nav li {
+    margin-left: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #007bff;
+}
+
+.footer-social a {
+    margin-left: 15px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.legal-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.legal-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.legal-links a:hover {
+    color: #007bff;
+}
