@@ -5,25 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Fonts */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    font-weight: 700;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: #666;
-}
-
 /* Navbar Styles */
 .navbar {
     background-color: #fff;
@@ -51,7 +32,6 @@ p {
 .nav-links a {
     text-decoration: none;
     color: #333;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -120,7 +100,7 @@ p {
 
 /* Mission & Vision Section */
 .mission-vision {
-    padding: 60px 0;
+    padding: 60px 20px;
     background-color: #fff;
 }
 
@@ -130,15 +110,25 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mission-image {
+    flex: 1;
+    padding: 10px;
 }
 
 .mission-image img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
+    object-fit: cover;
+    max-height: 500px;
 }
 
 .mission-text {
-    max-width: 600px;
+    flex: 1;
+    padding: 10px;
 }
 
 .mission-text h2 {
@@ -395,7 +385,6 @@ p {
 .footer-nav a {
     text-decoration: none;
     color: #333;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     transition: color 0.3s ease;
 }
