@@ -299,7 +299,7 @@ a:focus {
 .do_section .do_container .arrow_bg::before {
   content: "";
   position: absolute;
-  top: -23px;
+  top: -45px;
   left: -17px;
   width: 262%;
   height: 90%;
